@@ -47,7 +47,7 @@ jobs:
         if: always() # bisa diganti dengan success(), failed(), canceled(); tergantung kebutuhan tests
         with:
           name: Web and API UI Cucumber Reports
-          path: target/cucumber-WebAndAPi-reports.html
+          path: target/cucumber-reports.html
 
 #      # Deploy to GitHub Pages
 #      - name: Deploy to GitHub Pages
