@@ -49,12 +49,12 @@ jobs:
           name: Web and API UI Cucumber Reports
           path: target/cucumber-WebAndAPi-reports.html
 
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v4.0.0
-        with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/cucumber-WebAndAPi-reports.html
+#      # Deploy to GitHub Pages
+#      - name: Deploy to GitHub Pages
+#        if: always()
+#        uses: peaceiris/actions-gh-pages@v4.0.0
+#        with:
+#          personal_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: target/cucumber-WebAndAPi-reports.html
 
 
