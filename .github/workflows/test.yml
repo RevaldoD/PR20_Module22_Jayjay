@@ -1,4 +1,4 @@
-name: Web Automation Workflow
+name: Web and API Automation Workflow
 on:
   push:
     branches: [ "master" ]
@@ -47,7 +47,7 @@ jobs:
         if: always() # bisa diganti dengan success(), failed(), canceled(); tergantung kebutuhan tests
         with:
           name: Web and API UI Cucumber Reports
-          path: reports/test-report.html
+          path: target/cucumber-WebAndAPi-reports.html
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
@@ -55,6 +55,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/reports
+          publish_dir: target/cucumber-WebAndAPi-reports.html
 
 
