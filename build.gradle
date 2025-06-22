@@ -52,7 +52,7 @@ tasks.register('cucumber', JavaExec) {
     args(
             '--plugin', 'pretty',
             '--plugin', 'html:reports/test-report.html',
-            '--glue',   'com.valdo',
+            '--glue',   'com',
             '--tags',   tags,
             'src/test/resources'
     )
